@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>AOK Serviceapp | Kontakt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <meta property="og:image" content="img/img_logo_aok.jpg" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/neobird.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+</head>
+<body>
+<div id="mainnav">
+    <nav class="navbar navbar-absolute-top">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html"><img src="img/img_logo_aok.jpg"/></a>
+            <button type="button" class="navbar-toggle gradient-green" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="btn-home gradient-green" href="index.html"><img class="img-responsive" src="img/icon_home_btn.png"/></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mitgliedwerden.html">Mitglied werden</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+                <li><a href="datenschutz.html">Datenschutz</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+</div>
+<section id="kontakt">
+    <div id="header" class="container-fluid header-nav">
+        <img class="img-responsive" src="img/header_image.jpg"/>
+        <div class="row header-nav-top">
+            <div class="col-xs-12">
+                <img class="img-responsive" src="img/header_image_border.png"/>
+            </div>
+        </div>
+
+    </div>
+    <div id="ko-content" class="container-fluid container-padding">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="col-xs-12 bg-white">
+                    <h2 class="page-title">Kontakt</h2>
+                    <hr/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="col-xs-12 bg-white">
+                    <div id="service-wrapper">
+                        <div class="col-xs-offset-1 col-xs-10 contact-form contact-form-1 addtrans">
+                            <p><strong>E-Mail Anfrage</strong><br/>
+                                Sie möchten uns per E-Mail kontaktieren, dann geben Sie
+                                folgende Angaben an:</p>
+                            <form method="post" action="" onsubmit="return AOKRHInterface.onKontaktEmail()">
+                                <input id="email-vorname" class="validate addtrans" type="text" placeholder="Vorname* (erforderlich)" name="firstname"/>
+                                <input id="email-nachname" class="validate addtrans" type="text" placeholder="Nachname* (erforderlich)" name="lastname"/>
+                                <input id="email-plz" class="validate addtrans" type="text" placeholder="PLZ* (erforderlich)" name="plz" maxlength="5"/>
+                                <input id="email-email" class="validate addtrans" type="email" placeholder="E-Mail* (erforderlich)" name="email"/>
+                                <textarea id="email-message" class="validate addtrans" placeholder="Ihre Nachricht* (erforderlich)" name="message"></textarea>
+                                <input type="submit" value="Absenden" class="btn-green gradient-green">
+                            </form>
+                            <a href="javascript:void(0)" class="btn-terms">Datenschutzhinweis</a>
+                            <div class="terms-notes">
+                                <p>Die Angaben sind freiwillig. Die Angaben in den mit (erforderlich) gekennzeichneten Feldern benötigen wir mindestens, damit das Angebot genutzt und eine Personenverwechslung ausgeschlossen werden kann. Wir verarbeiten und nutzen Ihre Daten ausschließlich zu dem von Ihnen gewünschten Zweck bzw. für die Bearbeitung Ihrer Anfrage. Selbstverständlich behandeln wir alle von Ihnen eingetragenen Informationen vertraulich. Eine Weitergabe Ihrer Daten und Informationen an Dritte ist ausgeschlossen. Hinweise zur Verschlüsselung.</p>
+                            </div>
+                        </div>
+
+                        <!-- tab 2 -->
+                        <div class="col-xs-offset-1 col-xs-10 contact-form contact-form-2 addtrans">
+                            <p><strong>Service-Telefon – 24 Stunden täglich für ...</strong></p>
+                            <ul>
+                                <li>Wir sind immer für Sie da - auch außerhalb<br/> unserer üblichen Geschäftszeiten.</li>
+                                <li>Servicetelefon - 0800 0 326 326*<br/>
+                                    – 24 Stunden täglich für Sie da.</li>
+                                <li>*kostenfrei aus dem deutschen Fest- und Mobilfunknetz.</li>
+                            </ul>
+                            <a id="call-button" href="#" class="btn-green gradient-green btn-service-option">
+								<img src="img/pic_phone.png"/>Kostenfrei anrufen
+							</a>
+                            <a href="mailto:aok@rh.aok.de?subject=Anfrage%20%C3%BCber%20die%20Service-App" class="btn-green gradient-green btn-service-option"><img src="img/pic_mail.png"/>E-Mail schreiben</a>
+                            <a href="geschaeftsstellen.html" class="btn-green gradient-green btn-service-option"><img src="img/pic_location.png"/>Ihre AOK Geschäftsstelle</a>
+                        </div>
+                        <!-- tab 3 -->
+                        <div class="col-xs-offset-1 col-xs-10 contact-form contact-form-3 addtrans">
+                            <p><strong>Rückrufservice</strong><br/>
+                                Machen Sie bitte folgende Angaben, damit wir Sie
+                                zurück rufen können:</p>
+                            <form method="post" action="" onsubmit="return validateForm(3);">
+                                <input class="validate addtrans" type="text" placeholder="Vorname* (erforderlich)" name="firstname"/>
+                                <input class="validate addtrans" type="text" placeholder="Nachname* (erforderlich)" name="lastname"/>
+                                <input class="validate addtrans" type="text" placeholder="PLZ* (erforderlich)" name="plz" maxlength="5"/>
+                                <input class="validate addtrans" type="email" placeholder="E-Mail* (erforderlich)" name="email"/>
+                                <textarea class="validate addtrans" placeholder="Ihre Nachricht* (erforderlich)" name="message"></textarea>
+                                <div class="col-xs-9 col-time">
+                                    <label for="time">Wie können wir Sie am besten erreichen?</label>
+                                </div>
+                                <div class="col-xs-3 input-time">
+                                    <input id="time" type="text" placeholder="15:30" name="time">
+                                </div>
+
+                                <input type="submit" value="Absenden" class="btn-green gradient-green">
+
+                            </form>
+                            <a href="javascript:void(0)" class="btn-terms">Datenschutzhinweis</a>
+                            <div class="terms-notes">
+                                <p>Die Angaben sind freiwillig. Die Angaben in den mit (erforderlich) gekennzeichneten Feldern benötigen wir mindestens, damit das Angebot genutzt und eine Personenverwechslung ausgeschlossen werden kann. Wir verarbeiten und nutzen Ihre Daten ausschließlich zu dem von Ihnen gewünschten Zweck bzw. für die Bearbeitung Ihrer Anfrage. Selbstverständlich behandeln wir alle von Ihnen eingetragenen Informationen vertraulich. Eine Weitergabe Ihrer Daten und Informationen an Dritte ist ausgeschlossen. Hinweise zur Verschlüsselung.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="col-xs-12 bg-white">
+                    <a class="btn-green gradient-green btn-service btn-service-1 act" href="javascript:void(0);" onclick="showService(1)">E-Mail Anfrage</a>
+                    <a class="btn-green gradient-green btn-service btn-service-2 act" href="javascript:void(0);" onclick="showService(2)">Service Telefon</a>
+                    <a class="btn-green gradient-green addtrans btn-service btn-service-3 act" href="javascript:void(0);" onclick="showService(3)">Rückrufservice</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/mobile.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- NeoBird -->
+<script type="text/javascript" src="../cordova.js"></script>
+<script type="text/javascript" src="js/haxetools.js"></script>
+<script type="text/javascript">
+	AOKRHInterface.initKontakt();
+</script>
+
+</body>
+</html>

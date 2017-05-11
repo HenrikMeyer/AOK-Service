@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>AOK Serviceapp | Apotheken</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <meta property="og:image" content="img/img_logo_aok.jpg" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/neobird.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+</head>
+<body>
+<div id="mainnav">
+    <nav class="navbar navbar-absolute-top">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html"><img src="img/img_logo_aok.jpg"/></a>
+            <button type="button" class="navbar-toggle gradient-green" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="btn-home gradient-green" href="index.html"><img class="img-responsive" src="img/icon_home_btn.png"/></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mitgliedwerden.html">Mitglied werden</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+                <li><a href="datenschutz.html">Datenschutz</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+</div>
+<section id="kontakt">
+    <div id="header" class="container-fluid header-nav">
+        <img class="img-responsive" src="img/header_image.jpg"/>
+        <div class="row header-nav-top">
+            <div class="col-xs-12">
+                <img class="img-responsive" src="img/header_image_border.png"/>
+            </div>
+        </div>
+    </div>
+	<div id="contentholder">
+		<iframe id="contentframe" data-src="https://mobil.aokrh.de/suche/apotheke/app/1/?cid=rhha2015_1418_aok_service-app_notdienstapothekensuche_tb" frameborder="0"></iframe>
+	</div>
+</section>
+
+
+<!-- FOOTER -->
+<script src="js/vendor/jquery-1.11.2.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/mobile.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<!-- NeoBird -->
+<script type="text/javascript" src="../cordova.js"></script>
+<script type="text/javascript" src="js/haxetools.js"></script>
+<script type="text/javascript">
+	AOKRHInterface.initRemotePage();
+</script>
+
+</body>
+</html>
